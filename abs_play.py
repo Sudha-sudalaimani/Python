@@ -1,10 +1,10 @@
 #Create interface Playable (method play()). Implement in Football, Cricket.
 from abc import ABC,abstractmethod
-class playable(ABC):
+class playable(ABC): #playable interface
     @abstractmethod
     def play(self):
         pass
-class football(playable):
+class football(playable):#implement interface
     def play(self):
         print('Playing Football')
 class cricket(playable):
